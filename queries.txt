@@ -1,0 +1,20 @@
+CREATE TABLE TRANSACTION_TB
+    (
+    transID varchar2(12 byte) primary key,
+    accountHolder varchar2(50 byte) not null,
+    amount number not null,
+    transDate date not null,
+    transType varchar2(20 byte) not null,
+    remarks varchar2(100 byte) 
+    );
+    
+    
+  create sequence TRANS_SEQ
+  start with 10
+  minvalue 10
+  maxvalue 99
+  increment by 1;
+  
+  select TRANS_SEQ.NEXTVAL from dual;
+  
+  
