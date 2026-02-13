@@ -16,5 +16,12 @@ CREATE TABLE TRANSACTION_TB
   increment by 1;
   
   select TRANS_SEQ.NEXTVAL from dual;
+
+
+  TransactionDAO:
   
-  
+  INSERT INTO TRANSACTION_TB VALUES(?,?,?,?,?,?)
+  SELECT * FROM TRANSACTION_TB WHERE accountHolder = ? AND transDate = ?
+  SELECT TRANS_SEQ.NEXTVAL from dual
+  SELECT * FROM TRANSACTION_TB WHERE accountHolder = ? AND transDate = ?
+  SELECT * FROM TRANSACTION_TB
